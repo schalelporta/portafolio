@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 1 - Noticia</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        primary: '#6b21a8',
+                        primaryLight: '#9333ea',
+                        darkBg: '#121212',
+                        darkCard: '#1e1e1e',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#0f0f11] text-gray-200 font-sans antialiased min-h-screen py-12 px-6 overflow-x-hidden">
+    <div class="max-w-4xl mx-auto space-y-10">
+
+        <!-- Enlaces superiores -->
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <a href="index.html" class="inline-flex items-center bg-darkCard border border-gray-800 hover:border-primaryLight text-gray-300 hover:text-white font-medium py-3 px-6 rounded-lg shadow-lg transition-all duration-300 group">
+                <i class="fas fa-arrow-left mr-3 text-primaryLight group-hover:-translate-x-1 transition-transform"></i> Atrás
+            </a>
+            <a href="Actividad 2 Schalel.html" class="inline-flex items-center bg-darkCard border border-gray-800 hover:border-primaryLight text-gray-300 hover:text-white font-medium py-3 px-6 rounded-lg shadow-lg transition-all duration-300 group">
+                Ir A Actividad 2 <i class="fas fa-arrow-right ml-3 text-primaryLight group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+
+        <!-- Contenedor Principal -->
+        <div class="bg-darkCard border border-gray-800 rounded-2xl shadow-2xl relative overflow-hidden p-6 md:p-12">
+            <div class="absolute top-0 right-0 w-64 h-64 bg-primaryLight opacity-5 blur-[100px] rounded-full pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 bg-primary opacity-5 blur-[100px] rounded-full pointer-events-none"></div>
+
+            <div class="relative z-10">
+                <header class="border-b border-gray-800 pb-8 mb-8 text-center md:text-left">
+                    <div class="flex flex-col md:flex-row items-center gap-2 md:gap-4 text-sm font-semibold text-gray-400 uppercase tracking-widest mb-4">
+                        <span class="text-primaryLight flex items-center"><i class="far fa-newspaper mr-2"></i> El Día</span>
+                        <span class="hidden md:inline text-gray-700">•</span>
+                        <span>Santo Domingo, Jueves 7 de Agosto de 2025</span>
+                    </div>
+
+                    <h1 class="text-3xl md:text-5xl font-bold text-white leading-tight mb-6">
+                        Colegios tendrán rutas para transitar nuevo año escolar
+                    </h1>
+
+                    <p class="text-lg md:text-xl text-gray-300 font-serif italic border-l-4 border-primaryLight pl-5">
+                        Patrón vial. En lugares donde se han prohibido los giros a la izquierda, la Digesett acompañará a centros proceso adaptación.
+                    </p>
+                </header>
+
+                <div class="flex items-center gap-4 mb-8">
+                    <div class="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center text-primaryLight shadow-lg border border-gray-700">
+                        <i class="fas fa-user-edit text-xl"></i>
+                    </div>
+                    <div>
+                        <p class="text-white font-bold tracking-wide">YANET FÉLIZ</p>
+                        <p class="text-xs text-primaryLight uppercase tracking-wider font-semibold">Santo Domingo</p>
+                    </div>
+                </div>
+
+                <div class="font-serif text-gray-300 text-lg leading-relaxed space-y-6">
+                    <p>
+                        De cara al nuevo año esco-<br>
+                        lar 2025-26, los colegios<br>
+                        privados tendrán rutas es-<br>
+                        específicas para la movilidad<br>
+                        de sus estudiantes, como<br>
+                        además recibirán el<br>
+                        acompañamiento en ese<br>
+                        proceso de agentes de la<br>
+                        Dirección General de Se-<br>
+                        guridad de Tránsito y Trans-<br>
+                        porte Terrestre (Dige-<br>
+                        sett).
+                    </p>
+
+                    <p>
+                        La medida la adelantó<br>
+                        Alexandra Cedeño, direc-<br>
+                        tora de Movilidad Soste-<br>
+                        nible del Instituto Nacio-<br>
+                        nal de Tránsito y Trans-<br>
+                        porte Terrestre (Intrant),<br>
+                        al ser cuestionada sobre
+                    </p>
+
+                    <div class="my-10 flex flex-col items-center">
+                        <div class="relative group">
+                            <div class="absolute -inset-1 bg-gradient-to-r from-primaryLight to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                            <img src="img/pagina 1.jpg" alt="saco de jugos" width="300" height="300" class="relative rounded-xl shadow-2xl object-cover border border-gray-700">
+                        </div>
+                        <p class="text-sm text-gray-500 mt-4 italic text-center">La idea es evitar los grandes estancamientos en las vías.</p>
+                    </div>
+
+                    <p>
+                        los alcances e impacto que<br>
+                        ha tenido el plan “RD se<br>
+                        Mueve”.<br>
+                        “Se está preparando para<br>
+                        que cada centro escolar pri-<br>
+                        vado cuales son las rutas de tranay<br>
+                        dejo de los niños en las zonas<br>
+                        donde se ha cambiado el pa-<br>
+                        trón vial para que los direc-<br>
+                        toes se las puedan distribuir<br>
+                        a las asociaciones de padres<br>
+                        para cuando vayan a llevar a
+                    </p>
+
+                    <p>
+                        sus hijos a los colegios”,<br>
+                        comentó Cedeño.<br>
+                        Adelantó que preparan un<br>
+                        plan piloto de mapas digi-<br>
+                        tales para llevarlos a dis-<br>
+                        positivos de los directivos<br>
+                        de centro, con<br>
+                        quienes tienen pautadas<br>
+                        con mapas, donde se pue-<br>
+                        da ver en tiempo real la si-<br>
+                        tuación del tránsito, al mis-<br>
+                        mo tiempo que la Digesett<br>
+                        acompañará el proceso de<br>
+                        adaptación en las prime-<br>
+                        ras semanas del inicio del<br>
+                        año escolar.
+                    </p>
+
+                    <p class="bg-[#121212] p-6 rounded-lg border-l-2 border-gray-700 mt-8">
+                        Sobre las medidas imple-<br>
+                        mentadas para mejorar la<br>
+                        movilidad, Cedeño dijo este jueves tendrán resultados sobre las adicionales implementada,
+                        que darán a conocer en su momento.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

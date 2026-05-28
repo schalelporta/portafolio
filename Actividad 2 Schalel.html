@@ -1,0 +1,130 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Actividad 2</title>
+    
+    <!-- Tailwind CSS (Estilo del Portafolio) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para Íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Configuración idéntica a tu otra página -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#6b21a8',
+                        primaryLight: '#9333ea',
+                        darkBg: '#121212',
+                        darkCard: '#1e1e1e',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#0f0f11] text-gray-200 font-sans antialiased min-h-screen py-12 px-6 overflow-x-hidden">
+    <div class="max-w-5xl mx-auto space-y-10">
+
+        <!-- Enlaces superiores -->
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <a href="index.html" class="inline-flex items-center bg-darkCard border border-gray-800 hover:border-primaryLight text-gray-300 hover:text-white font-medium py-3 px-6 rounded-lg shadow-lg transition-all duration-300 group">
+                <i class="fas fa-arrow-left mr-3 text-primaryLight group-hover:-translate-x-1 transition-transform"></i> Atrás
+            </a>
+            <a href="Actividad 3 Schalel.html" class="inline-flex items-center bg-darkCard border border-gray-800 hover:border-primaryLight text-gray-300 hover:text-white font-medium py-3 px-6 rounded-lg shadow-lg transition-all duration-300 group">
+                Ir A Actividad 3 <i class="fas fa-arrow-right ml-3 text-primaryLight group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+
+        <!-- Título Principal y Párrafos -->
+        <div class="bg-darkCard border border-gray-800 rounded-2xl p-8 md:p-10 shadow-2xl relative overflow-hidden">
+            <!-- Brillo decorativo de fondo -->
+            <div class="absolute top-0 right-0 w-64 h-64 bg-primaryLight opacity-5 blur-[100px] rounded-full pointer-events-none"></div>
+            
+            <h1 class="text-3xl md:text-5xl font-bold text-white border-l-4 border-primaryLight pl-6 mb-8 tracking-tight">
+                RD a la vanguardia contra el narco
+            </h1>
+
+            <div class="space-y-6 text-gray-300 leading-relaxed text-lg">
+                <p>
+                    Narcotráfico. El presidente Luis Abinader afirmó que República Dominicana se encuentra “a la vanguardia” en la lucha contra el narcotráfico, una posición que ha sido reconocida por países como Estados Unidos y Francia.
+                </p>
+                <p>
+                    Al ser cuestionado sobre el reciente decomiso de 137 kilogramos de cocaína líquida, el mandatario reconoció que el narcotráfico se ha tornado cada vez más sofisticado y desafiante, lo que obliga a las autoridades locales a mantenerse en constante vigilancia y actualización de estrategias.
+                </p>
+                <p>
+                    Abinader subrayó que, a pesar de los avances, las organizaciones criminales están recurriendo a métodos más ingeniosos para evadir la justicia, lo que demanda una respuesta cada vez más coordinada y rigurosa por parte de los Estados.
+                </p>
+            </div>
+        </div>
+
+        <!-- Línea divisoria original estilizada -->
+        <hr class="border-t border-gray-800 w-full my-12">
+
+        <!-- Contenedor de Listas (Grid a 2 columnas en PC, 1 en móviles) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Detalles importantes (<dl>) -->
+            <div class="bg-darkCard border border-gray-800 rounded-2xl p-8 shadow-lg hover:border-primaryLight/30 transition-colors duration-300">
+                <h2 class="text-2xl font-bold text-white mb-6 flex items-center">
+                    <i class="fas fa-info-circle text-primaryLight mr-3"></i> Detalles importantes
+                </h2>
+                <dl class="space-y-5">
+                    <div class="bg-[#121212] p-4 rounded-xl border border-gray-800">
+                        <dt class="font-semibold text-primaryLight text-lg mb-1">Decomiso reciente</dt>
+                        <dd class="text-gray-400">137 kilogramos de cocaína líquida confiscados.</dd>
+                    </div>
+                    <div class="bg-[#121212] p-4 rounded-xl border border-gray-800">
+                        <dt class="font-semibold text-primaryLight text-lg mb-1">Reconocimiento internacional</dt>
+                        <dd class="text-gray-400">Países como Estados Unidos y Francia reconocen la lucha dominicana.</dd>
+                    </div>
+                    <div class="bg-[#121212] p-4 rounded-xl border border-gray-800">
+                        <dt class="font-semibold text-primaryLight text-lg mb-1">Retos actuales</dt>
+                        <dd class="text-gray-400">El narco se vuelve más sofisticado y desafiante.</dd>
+                    </div>
+                </dl>
+            </div>
+
+            <!-- Medidas adoptadas (<ol>) -->
+            <div class="bg-darkCard border border-gray-800 rounded-2xl p-8 shadow-lg hover:border-primaryLight/30 transition-colors duration-300">
+                <h2 class="text-2xl font-bold text-white mb-6 flex items-center">
+                    <i class="fas fa-shield-alt text-primaryLight mr-3"></i> Medidas adoptadas
+                </h2>
+                <ol class="space-y-4 list-decimal list-inside text-gray-300 marker:text-primaryLight marker:font-bold text-lg">
+                    <li class="bg-[#121212] p-4 rounded-xl border border-gray-800 leading-relaxed">Vigilancia constante por parte de autoridades locales.</li>
+                    <li class="bg-[#121212] p-4 rounded-xl border border-gray-800 leading-relaxed">Actualización continua de estrategias anti-narcotráfico.</li>
+                    <li class="bg-[#121212] p-4 rounded-xl border border-gray-800 leading-relaxed">Coordinación internacional para combatir el crimen organizado.</li>
+                </ol>
+            </div>
+
+        </div>
+
+        <!-- Países interesados (<ul>) -->
+        <div class="bg-darkCard border border-gray-800 rounded-2xl p-8 shadow-lg hover:border-primaryLight/30 transition-colors duration-300">
+            <h2 class="text-2xl font-bold text-white mb-6 flex items-center">
+                <i class="fas fa-globe-americas text-primaryLight mr-3"></i> Países interesados en el modelo dominicano
+            </h2>
+            <ul class="flex flex-col sm:flex-row gap-4">
+                <li class="flex-1 bg-[#121212] border border-gray-800 px-6 py-4 rounded-xl text-gray-300 font-medium flex items-center justify-center text-lg hover:bg-gray-800 transition-colors">
+                    <i class="fas fa-flag text-gray-500 mr-3"></i> Estados Unidos
+                </li>
+                <li class="flex-1 bg-[#121212] border border-gray-800 px-6 py-4 rounded-xl text-gray-300 font-medium flex items-center justify-center text-lg hover:bg-gray-800 transition-colors">
+                    <i class="fas fa-flag text-gray-500 mr-3"></i> Francia
+                </li>
+            </ul>
+        </div>
+
+        <br>
+
+    </div>
+
+</body>
+</html>

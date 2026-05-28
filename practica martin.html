@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+
+   
+</head>
+<body class="bg-[#0f0f11] text-gray-200 font-sans antialiased min-h-screen px-6 py-12 overflow-x-hidden">
+
+    <div class="mx-auto flex w-full max-w-5xl flex-col gap-8">
+        <div class="bg-darkCard border border-gray-800 rounded-2xl shadow-2xl p-6 md:p-8">
+            <form class="space-y-5">
+                <div>
+                    <label class="block text-sm font-medium text-gray-300 mb-2">Texto</label>
+                    <input type="text" class="w-full rounded-lg border border-gray-700 bg-[#111116] px-4 py-3 text-white outline-none transition-colors focus:border-primaryLight">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-300 mb-2">Correo electr&oacute;nico</label>
+                    <input type="email" class="w-full rounded-lg border border-gray-700 bg-[#111116] px-4 py-3 text-white outline-none transition-colors focus:border-primaryLight">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-300 mb-2">Enviar</label>
+                    <input type="submit" value="Enviar" class="rounded-lg bg-primaryLight hover:bg-primary text-white font-medium py-3 px-6 transition-colors cursor-pointer">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-300 mb-2">Contrase&ntilde;a</label>
+                    <input type="password" class="w-full rounded-lg border border-gray-700 bg-[#111116] px-4 py-3 text-white outline-none transition-colors focus:border-primaryLight">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-300 mb-2">N&uacute;mero</label>
+                    <input type="number" class="w-full rounded-lg border border-gray-700 bg-[#111116] px-4 py-3 text-white outline-none transition-colors focus:border-primaryLight">
+                </div>
+
+                <div>
+                    <p class="text-sm font-medium text-gray-300 mb-2">Sexo</p>
+                    <div class="flex flex-wrap gap-4 rounded-lg border border-gray-700 bg-[#111116] px-4 py-3">
+                        <label class="inline-flex items-center gap-2">
+                            <input type="radio" name="sexo" class="accent-primaryLight">
+                            <span>Masculino</span>
+                        </label>
+                        <label class="inline-flex items-center gap-2">
+                            <input type="radio" name="sexo" class="accent-primaryLight">
+                            <span>Femenino</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <p class="text-sm font-medium text-gray-300 mb-2">Intereses</p>
+                    <div class="flex flex-wrap gap-4 rounded-lg border border-gray-700 bg-[#111116] px-4 py-3">
+                        <label class="inline-flex items-center gap-2">
+                            <input type="checkbox" class="accent-primaryLight">
+                            <span>Leer</span>
+                        </label>
+                        <label class="inline-flex items-center gap-2">
+                            <input type="checkbox" class="accent-primaryLight">
+                            <span>Deportes</span>
+                        </label>
+                        <label class="inline-flex items-center gap-2">
+                            <input type="checkbox" class="accent-primaryLight">
+                            <span>M&uacute;sica</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-300 mb-2">Mensaje</label>
+                    <textarea rows="4" class="w-full rounded-lg border border-gray-700 bg-[#111116] px-4 py-3 text-white outline-none transition-colors focus:border-primaryLight"></textarea>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-300 mb-2">Ciudad</label>
+                    <select class="w-full rounded-lg border border-gray-700 bg-[#111116] px-4 py-3 text-white outline-none transition-colors focus:border-primaryLight">
+                        <option>Santo Domingo</option>
+                        <option>Santiago</option>
+                        <option>La Vega</option>
+                        <option>San Crist&oacute;bal</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

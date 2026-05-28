@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Himno a Matías Ramón Mella</title>
+    
+    <!-- Tailwind CSS (Estilo del Portafolio) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para Íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    
+    <!-- Configuración idéntica a tu página base -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'], /* Fuente clásica para los versos del himno */
+                    },
+                    colors: {
+                        primary: '#6b21a8',
+                        primaryLight: '#9333ea',
+                        darkBg: '#121212',
+                        darkCard: '#1e1e1e',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#0f0f11] text-gray-200 font-sans antialiased min-h-screen py-12 px-6 overflow-x-hidden">
+    <div class="max-w-4xl mx-auto space-y-10">
+
+        <!-- Navegación Superior -->
+        <div class="flex justify-between items-center">
+            <!-- Botón Volver -->
+            <a href="4.html" class="inline-flex items-center bg-darkCard border border-gray-800 hover:border-primaryLight text-gray-300 hover:text-white font-medium py-3 px-6 rounded-lg shadow-lg transition-all duration-300 group">
+                <i class="fas fa-arrow-left mr-3 text-primaryLight group-hover:-translate-x-1 transition-transform"></i> Volver
+            </a>
+            <span class="px-4 py-2 rounded-lg bg-darkCard text-primaryLight text-sm font-semibold tracking-wider uppercase border border-gray-800 shadow-lg">
+                Símbolos Patrios
+            </span>
+        </div>
+
+        <!-- Encabezado Principal (Enlace a YouTube) -->
+        <div class="text-center space-y-6 relative z-10">
+            <a href="https://youtu.be/_6STYD0TLdE?si=j9LjSExiwR_gpR8S" target="_blank" class="inline-block group">
+                <h1 class="text-3xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primaryLight to-blue-400 flex items-center justify-center gap-4 transition-transform transform group-hover:scale-105">
+                    Himno a Matías Ramón Mella
+                    <i class="fab fa-youtube text-red-500 text-4xl md:text-5xl drop-shadow-[0_0_15px_rgba(239,68,68,0.5)]"></i>
+                </h1>
+                <p class="text-gray-400 mt-2 text-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                    <i class="fas fa-external-link-alt mr-2"></i> Ver en YouTube
+                </p>
+            </a>
+        </div>
+
+        <!-- Contenedor Principal (Imagen y Letras) -->
+        <div class="bg-darkCard border border-gray-800 rounded-2xl shadow-2xl relative overflow-hidden p-6 md:p-12">
+            <!-- Brillos decorativos -->
+            <div class="absolute top-0 right-0 w-64 h-64 bg-primaryLight opacity-5 blur-[100px] rounded-full pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-600 opacity-5 blur-[100px] rounded-full pointer-events-none"></div>
+            
+            <div class="relative z-10">
+                
+                <!-- Imagen Destacada -->
+                <div class="mb-12 flex justify-center">
+                    <div class="relative group max-w-sm w-full">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 via-primaryLight to-red-600 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-1000 group-hover:duration-200"></div>
+                        <img src="img/matias.jpeg" alt="Matías Ramón Mella logo" class="relative rounded-xl shadow-2xl object-cover border border-gray-700 w-full">
+                    </div>
+                </div>
+
+                <!-- Letras del Himno -->
+                <div class="font-serif text-gray-300 text-lg md:text-xl leading-relaxed text-center space-y-8">
+                    <i class="fas fa-quote-left text-4xl text-primaryLight/20 mb-4 block"></i>
+
+                    <p class="drop-shadow-md">
+                        No fue nunca la divisa del instinto de matar,<br>
+                        ni fue el rígido instrumento de la fuerza militar<br>
+                        provocando las groseras ambiciones del poder:<br>
+                        Fue tu espada la divisa del honor y del deber.
+                    </p>
+
+                    <p class="drop-shadow-md">
+                        Fiel discípulo de Duarte,<br>
+                        comprendiste el ideal,<br>
+                        y sirviendo los destinos<br>
+                        de la causa nacional.
+                    </p>
+
+                    <p class="drop-shadow-md">
+                        Disparaste tu trabuco,<br>
+                        que rugió como León,<br>
+                        despertando las conciencias<br>
+                        y clamando redención.
+                    </p>
+
+                    <p class="drop-shadow-md">
+                        La Bandera fue tu culto,<br>
+                        la Bandera fue tu altar,<br>
+                        y dijiste: Cuando vaya para<br>
+                        siempre a descansar.<br>
+                        Que ella envuelva mi cadáver.
+                    </p>
+
+                    <p class="drop-shadow-md">
+                        Y moriste con honor,<br>
+                        en los brazos<br>
+                        siempre abiertos de la enseña tricolor.
+                    </p>
+
+                    <p class="drop-shadow-md">
+                        Y después, cuando quisieron<br>
+                        de la fosa recoger,<br>
+                        tus cenizas veneradas,<br>
+                        un milagro pudo ser:<br>
+                        Encontraron la bandera,<br>
+                        la Bandera tricolor,<br>
+                        reviviendo en sus matices<br>
+                        la grandeza de tu amor.
+                    </p>
+
+                    <i class="fas fa-quote-right text-4xl text-primaryLight/20 mt-4 block"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contenedor Multimedia (Video y Audio) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <!-- Video -->
+            <div class="bg-darkCard border border-gray-800 rounded-2xl p-6 md:p-8 shadow-2xl flex flex-col items-center hover:border-primaryLight transition-colors relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-32 h-32 bg-primaryLight opacity-5 blur-[50px] rounded-full pointer-events-none"></div>
+                <h3 class="text-white font-semibold mb-4 flex items-center relative z-10">
+                    <i class="fas fa-film text-primaryLight mr-2"></i> Video del Himno
+                </h3>
+                <div class="w-full rounded-lg overflow-hidden border border-gray-700 shadow-lg bg-black relative z-10">
+                    <video class="w-full h-auto max-h-[250px] object-contain" controls loop autoplay muted>
+                        <source src="video/matias.mp4" type="video/mp4">
+                        Tu navegador no soporta video HTML5.
+                    </video>
+                </div>
+            </div>
+
+            <!-- Audio -->
+            <div class="bg-darkCard border border-gray-800 rounded-2xl p-6 md:p-8 shadow-2xl flex flex-col items-center justify-center hover:border-primaryLight transition-colors relative overflow-hidden">
+                <div class="absolute bottom-0 left-0 w-32 h-32 bg-primaryLight opacity-5 blur-[50px] rounded-full pointer-events-none"></div>
+                <h3 class="text-white font-semibold mb-6 flex items-center relative z-10">
+                    <i class="fas fa-headphones-alt text-primaryLight mr-2"></i> Audio del Himno
+                </h3>
+                <div class="w-full p-4 bg-gray-900 rounded-full border border-gray-700 shadow-inner relative z-10">
+                    <audio class="w-full" controls loop>
+                        <source src="audio/matias.mp3" type="audio/mp4">
+                        Tu navegador no soporta audio HTML5.
+                    </audio>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Navegación Inferior (Siguiente) -->
+        <div class="flex justify-end pt-4 pb-10">
+            <a href="6.html" class="inline-flex items-center bg-darkCard border border-gray-800 hover:border-primaryLight text-gray-300 hover:text-white font-medium py-3 px-6 rounded-lg shadow-lg transition-all duration-300 group">
+                Siguiente: Himno Fe y Alegría <i class="fas fa-arrow-right ml-3 text-primaryLight group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>

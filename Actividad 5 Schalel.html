@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 5</title>
+    
+    <!-- Tailwind CSS (Estilo del Portafolio) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para Íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Configuración idéntica a tu página base -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#6b21a8',
+                        primaryLight: '#9333ea',
+                        darkBg: '#121212',
+                        darkCard: '#1e1e1e',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#0f0f11] text-gray-200 font-sans antialiased min-h-screen py-12 px-6 overflow-x-hidden">
+    <div class="max-w-6xl mx-auto space-y-10">
+
+        <!-- Enlaces superiores -->
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <a href="index.html" class="inline-flex items-center bg-darkCard border border-gray-800 hover:border-primaryLight text-gray-300 hover:text-white font-medium py-3 px-6 rounded-lg shadow-lg transition-all duration-300 group">
+                <i class="fas fa-arrow-left mr-3 text-primaryLight group-hover:-translate-x-1 transition-transform"></i> Atrás
+            </a>
+            <a href="Actividad 5.1.html" class="inline-flex items-center bg-darkCard border border-gray-800 hover:border-primaryLight text-gray-300 hover:text-white font-medium py-3 px-6 rounded-lg shadow-lg transition-all duration-300 group">
+                Ir A Actividad 5.1 <i class="fas fa-arrow-right ml-3 text-primaryLight group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+
+        <!-- Contenedor Principal para las Tablas -->
+        <div class="space-y-12">
+
+            <!-- TABLA 1: Eres comprador -->
+            <div class="bg-darkCard border border-gray-800 rounded-2xl shadow-2xl relative overflow-hidden">
+                <!-- Brillo decorativo -->
+                <div class="absolute top-0 right-0 w-64 h-64 bg-primaryLight opacity-5 blur-[100px] rounded-full pointer-events-none"></div>
+                
+                <div class="p-6 md:p-8">
+                    <div class="overflow-x-auto custom-scrollbar">
+                        <table class="w-full text-left border-collapse min-w-[700px]">
+                            <caption class="text-2xl font-bold text-white mb-6 text-left border-l-4 border-primaryLight pl-4">Eres comprador:</caption>
+                            
+                            <!-- Se adaptó el color de fondo para que coincida con el tema oscuro/morado -->
+                            <colgroup>
+                                <col style="background-color: rgba(147, 51, 234, 0.05);">
+                                <col style="background-color: rgba(147, 51, 234, 0.05);">
+                                <col style="background-color: rgba(147, 51, 234, 0.05);">
+                                <col style="background-color: rgba(147, 51, 234, 0.05);">
+                                <col style="background-color: rgba(147, 51, 234, 0.05);">
+                            </colgroup>
+
+                            <thead class="bg-[#121212] border-b-2 border-primaryLight/50">
+                                <tr>
+                                    <th class="p-4 font-semibold text-primaryLight tracking-wide">Negocio</th>
+                                    <th class="p-4 font-semibold text-primaryLight tracking-wide">Compras por</th>
+                                    <th class="p-4 font-semibold text-primaryLight tracking-wide">Pagas al banco con estos billetes</th>
+                                    <th class="p-4 font-semibold text-primaryLight tracking-wide">Devuelta con la menor cantidad de billetes</th>
+                                </tr>
+                            </thead>
+
+                            <tbody class="divide-y divide-gray-800">
+                                <tr class="hover:bg-gray-800/40 transition-colors">
+                                    <td class="p-4 font-medium text-white">Heladería</td>
+                                    <td class="p-4 text-gray-300">$350</td>
+                                    <td class="p-4 text-gray-300">4 billetes de $100</td>
+                                    <td class="p-4 text-gray-300">5 billetes de $10</td>
+                                </tr>
+                                <tr class="hover:bg-gray-800/40 transition-colors">
+                                    <td class="p-4 font-medium text-white">Puesto de artesanía</td>
+                                    <td class="p-4 text-gray-300">$1,250</td>
+                                    <td class="p-4 text-gray-300">2 billetes de $1,000</td>
+                                    <td class="p-4 text-gray-300"></td>
+                                </tr>
+                                <tr class="hover:bg-gray-800/40 transition-colors">
+                                    <td class="p-4 font-medium text-white">Puesto de frutas</td>
+                                    <td class="p-4 text-gray-300"></td>
+                                    <td class="p-4 text-gray-300">2 billetes de $100<br>3 billetes de $10</td>
+                                    <td class="p-4 text-gray-300">5 billetes de $1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- TABLA 2: Eres vendedor -->
+            <div class="bg-darkCard border border-gray-800 rounded-2xl shadow-2xl relative overflow-hidden">
+                <!-- Brillo decorativo -->
+                <div class="absolute bottom-0 left-0 w-64 h-64 bg-primaryLight opacity-5 blur-[100px] rounded-full pointer-events-none"></div>
+                
+                <div class="p-6 md:p-8">
+                    <div class="overflow-x-auto custom-scrollbar">
+                        <table class="w-full text-left border-collapse min-w-[700px]">
+                            <caption class="text-2xl font-bold text-white mb-6 text-left border-l-4 border-primaryLight pl-4">Eres vendedor:</caption>
+                            
+                            <!-- Se adaptó el color de fondo para que coincida con el tema oscuro/morado -->
+                            <colgroup>
+                                <col style="background-color: rgba(147, 51, 234, 0.05);">
+                                <col style="background-color: rgba(147, 51, 234, 0.05);">
+                                <col style="background-color: rgba(147, 51, 234, 0.05);">
+                                <col style="background-color: rgba(147, 51, 234, 0.05);">
+                                <col style="background-color: rgba(147, 51, 234, 0.05);">
+                            </colgroup>
+                            
+                            <thead class="bg-[#121212] border-b-2 border-primaryLight/50">
+                                <tr>
+                                    <th class="p-4 font-semibold text-primaryLight tracking-wide">Negocio</th>
+                                    <th class="p-4 font-semibold text-primaryLight tracking-wide">Vendes por</th>
+                                    <th class="p-4 font-semibold text-primaryLight tracking-wide">Cobras al banco con estos billetes</th>
+                                    <th class="p-4 font-semibold text-primaryLight tracking-wide">Devuelta con la menor cantidad de billetes</th>
+                                </tr>
+                            </thead>
+
+                            <tbody class="divide-y divide-gray-800">
+                                <tr class="hover:bg-gray-800/40 transition-colors">
+                                    <td class="p-4 font-medium text-white">Heladería</td>
+                                    <td class="p-4 text-gray-300">$375</td>
+                                    <td class="p-4 text-gray-300"></td>
+                                    <td class="p-4 text-gray-300">2 billetes de $10<br>5 billetes de $1</td>
+                                </tr>
+                                <tr class="hover:bg-gray-800/40 transition-colors">
+                                    <td class="p-4 font-medium text-white">Puesto de artesanía</td>
+                                    <td class="p-4 text-gray-300">$850</td>
+                                    <td class="p-4 text-gray-300">1 billete de $1,000</td>
+                                    <td class="p-4 text-gray-300"></td>
+                                </tr>
+                                <tr class="hover:bg-gray-800/40 transition-colors">
+                                    <td class="p-4 font-medium text-white">Puesto de frutas</td>
+                                    <td class="p-4 text-gray-300"></td>
+                                    <td class="p-4 text-gray-300">4 billetes de $100</td>
+                                    <td class="p-4 text-gray-300">7 billetes de $10<br>5 billetes de $1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

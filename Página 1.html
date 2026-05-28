@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1</title>
+    
+    <!-- Tailwind CSS (Estilo del Portafolio) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para Íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Configuración idéntica a tus páginas base -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#6b21a8',
+                        primaryLight: '#9333ea',
+                        darkBg: '#121212',
+                        darkCard: '#1e1e1e',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#0f0f11] text-gray-200 font-sans antialiased min-h-screen py-12 px-6 overflow-x-hidden">
+    <div class="max-w-4xl mx-auto space-y-10">
+
+        <!-- Navegación Superior -->
+        <div class="flex justify-between items-center">
+            <a href="hipervinculos.html" class="inline-flex items-center bg-darkCard border border-gray-800 hover:border-primaryLight text-gray-300 hover:text-white font-medium py-2 md:py-3 px-5 md:px-6 rounded-lg shadow-lg transition-all duration-300 group">
+                <i class="fas fa-arrow-left mr-3 text-primaryLight group-hover:-translate-x-1 transition-transform"></i> Volver
+            </a>
+            <h1 class="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primaryLight to-purple-400">
+                Lectura Principal
+            </h1>
+        </div>
+
+        <!-- Contenedor Principal de Contenido -->
+        <div class="bg-darkCard border border-gray-800 rounded-2xl shadow-2xl relative overflow-hidden p-6 md:p-10">
+            <!-- Brillos decorativos -->
+            <div class="absolute top-0 left-0 w-64 h-64 bg-primaryLight opacity-5 blur-[100px] rounded-full pointer-events-none"></div>
+            <div class="absolute bottom-0 right-0 w-64 h-64 bg-primary opacity-5 blur-[100px] rounded-full pointer-events-none"></div>
+            
+            <div class="relative z-10 flex flex-col md:flex-row gap-10 items-start">
+                
+                <!-- Imagen Interactiva -->
+                <div class="w-full md:w-1/3 flex-shrink-0">
+                    <a href="https://www.diariolibre.com/" target="_blank" class="block group relative rounded-xl overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.5)] border-2 border-gray-800 hover:border-primaryLight transition-all duration-300">
+                        <!-- Capa oscura superpuesta al pasar el mouse -->
+                        <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex items-center justify-center">
+                            <i class="fas fa-external-link-alt text-white text-3xl drop-shadow-lg"></i>
+                        </div>
+                        <img src="img/hablando.jpg" alt="Imagen del libro" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </a>
+                    <p class="text-center text-sm text-gray-500 mt-3"><i class="fas fa-info-circle mr-1"></i> Clic en la imagen para ir a Diario Libre</p>
+                </div>
+
+                <!-- Textos (Transformados en Citas / Tarjetas) -->
+                <div class="w-full md:w-2/3 space-y-6">
+                    
+                    <blockquote class="bg-[#121212] p-6 rounded-xl border-l-4 border-primaryLight relative shadow-lg group hover:shadow-[0_0_15px_rgba(147,51,234,0.15)] transition-shadow">
+                        <i class="fas fa-quote-right absolute top-4 right-4 text-gray-800 text-3xl group-hover:text-primary/30 transition-colors"></i>
+                        <p class="text-gray-300 italic text-lg leading-relaxed relative z-10">
+                            “La importancia de la transmisión oral y la necesidad de fijar por escrito las canciones que conocen las personas mayores y que han llegado a ellas de forma oral.”
+                        </p>
+                    </blockquote>
+
+                    <blockquote class="bg-[#121212] p-6 rounded-xl border-l-4 border-primaryLight relative shadow-lg group hover:shadow-[0_0_15px_rgba(147,51,234,0.15)] transition-shadow">
+                        <i class="fas fa-quote-right absolute top-4 right-4 text-gray-800 text-3xl group-hover:text-primary/30 transition-colors"></i>
+                        <p class="text-gray-300 italic text-lg leading-relaxed relative z-10">
+                            “Muchas canciones antiguas se han perdido porque nadie las escribió.”
+                        </p>
+                    </blockquote>
+
+                    <blockquote class="bg-[#121212] p-6 rounded-xl border-l-4 border-primaryLight relative shadow-lg group hover:shadow-[0_0_15px_rgba(147,51,234,0.15)] transition-shadow">
+                        <i class="fas fa-quote-right absolute top-4 right-4 text-gray-800 text-3xl group-hover:text-primary/30 transition-colors"></i>
+                        <p class="text-gray-300 italic text-lg leading-relaxed relative z-10">
+                            “Las personas mayores pueden aportar mucho a la cultura con sólo recordar canciones y dictárselas a los niños y niñas.”
+                        </p>
+                    </blockquote>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Navegación Inferior -->
+        <div class="flex justify-end gap-4 pt-4 border-t border-gray-800/50">
+            <!-- El enlace a la Página 3 no tenía texto en tu HTML original, lo dejo con la misma estructura pero le añadí estilo por si le pones texto luego -->
+            <a href="Página 3.html" class="hidden"></a>  
+            
+            <a href="Página 2 .html" class="inline-flex items-center bg-primary hover:bg-primaryLight text-white font-semibold py-3 px-8 rounded-full shadow-[0_0_15px_rgba(147,51,234,0.3)] hover:shadow-[0_0_25px_rgba(147,51,234,0.6)] transition-all duration-300 group">
+                Siguiente: Página 2 <i class="fas fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>

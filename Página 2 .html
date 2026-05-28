@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 2</title>
+    
+    <!-- Tailwind CSS (Estilo del Portafolio) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para Íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Configuración idéntica a tus páginas base -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Georgia', 'serif'], /* Añadido para el poema */
+                    },
+                    colors: {
+                        primary: '#6b21a8',
+                        primaryLight: '#9333ea',
+                        darkBg: '#121212',
+                        darkCard: '#1e1e1e',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#0f0f11] text-gray-200 font-sans antialiased min-h-screen py-12 px-6 overflow-x-hidden">
+    <div class="max-w-4xl mx-auto space-y-10">
+
+        <!-- Navegación Superior -->
+        <div class="flex justify-between items-center">
+            <a href="hipervinculos.html" class="inline-flex items-center bg-darkCard border border-gray-800 hover:border-primaryLight text-gray-300 hover:text-white font-medium py-2 md:py-3 px-5 md:px-6 rounded-lg shadow-lg transition-all duration-300 group">
+                <i class="fas fa-arrow-left mr-3 text-primaryLight group-hover:-translate-x-1 transition-transform"></i> Volver
+            </a>
+            <h1 class="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primaryLight to-purple-400">
+                Poema del Payaso
+            </h1>
+        </div>
+
+        <!-- Contenedor Principal de Contenido -->
+        <div class="bg-darkCard border border-gray-800 rounded-2xl shadow-2xl relative overflow-hidden p-6 md:p-12">
+            <!-- Brillos decorativos -->
+            <div class="absolute top-0 right-0 w-64 h-64 bg-primaryLight opacity-5 blur-[100px] rounded-full pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 bg-primary opacity-5 blur-[100px] rounded-full pointer-events-none"></div>
+            
+            <div class="relative z-10 flex flex-col md:flex-row gap-12 items-center">
+                
+                <!-- Imagen Interactiva -->
+                <div class="w-full md:w-1/2 flex-shrink-0">
+                    <a href="https://books.google.es/" target="_blank" class="block group relative rounded-xl overflow-hidden shadow-[0_0_20px_rgba(0,0,0,0.5)] border-2 border-gray-800 hover:border-primaryLight transition-all duration-300">
+                        <!-- Capa oscura superpuesta al pasar el mouse -->
+                        <div class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 flex items-center justify-center">
+                            <i class="fas fa-book-open text-white text-4xl drop-shadow-lg"></i>
+                        </div>
+                        <img src="img/payaso .jpg" alt="payaso" class="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-500">
+                    </a>
+                    <p class="text-center text-sm text-gray-500 mt-4"><i class="fas fa-info-circle mr-1"></i> Clic en la imagen para ir a Google Books</p>
+                </div>
+
+                <!-- Textos (Poema estilizado) -->
+                <div class="w-full md:w-1/2 flex flex-col space-y-8 items-center text-center">
+                    
+                    <i class="fas fa-quote-left text-4xl text-primary/30 mb-2"></i>
+
+                    <div class="space-y-6">
+                        <p class="text-xl md:text-2xl text-gray-200 font-serif italic leading-relaxed drop-shadow-md">
+                            Era un payaso feliz,<br>
+                            por que alegría sembraba.
+                        </p>
+
+                        <p class="text-xl md:text-2xl text-gray-300 font-serif italic leading-relaxed drop-shadow-md">
+                            con su voz y su mirada, <br>
+                            con su sencillo reir,<br>
+                            a todos les transmitía.
+                        </p>
+
+                        <p class="text-xl md:text-2xl text-gray-300 font-serif italic leading-relaxed drop-shadow-md">
+                            Su trabajo era alegría <br>
+                            y en los niños y niñas iba <br>
+                            sembrando ese amor, que <br>
+                            iba llenando <br>
+                            su corazon cada día.
+                        </p>
+                    </div>
+
+                    <i class="fas fa-quote-right text-4xl text-primary/30 mt-4"></i>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Navegación Inferior -->
+        <div class="flex justify-end pt-4 border-t border-gray-800/50">
+            <a href="Página 3.html" class="inline-flex items-center bg-primary hover:bg-primaryLight text-white font-semibold py-3 px-8 rounded-full shadow-[0_0_15px_rgba(147,51,234,0.3)] hover:shadow-[0_0_25px_rgba(147,51,234,0.6)] transition-all duration-300 group">
+                Siguiente: Página 3 <i class="fas fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 3</title>
+    
+    <!-- Tailwind CSS (Estilo del Portafolio) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para Íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Configuración idéntica a tu página base -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#6b21a8',
+                        primaryLight: '#9333ea',
+                        darkBg: '#121212',
+                        darkCard: '#1e1e1e',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#0f0f11] text-gray-200 font-sans antialiased min-h-screen py-12 px-6 overflow-x-hidden">
+    <div class="max-w-4xl mx-auto space-y-10">
+
+        <!-- Enlaces superiores -->
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+            <a href="index.html" class="inline-flex items-center bg-darkCard border border-gray-800 hover:border-primaryLight text-gray-300 hover:text-white font-medium py-3 px-6 rounded-lg shadow-lg transition-all duration-300 group">
+                <i class="fas fa-arrow-left mr-3 text-primaryLight group-hover:-translate-x-1 transition-transform"></i> Atrás
+            </a>
+            <a href="Actividad 4 Schalel.html" class="inline-flex items-center bg-darkCard border border-gray-800 hover:border-primaryLight text-gray-300 hover:text-white font-medium py-3 px-6 rounded-lg shadow-lg transition-all duration-300 group">
+                Ir A Actividad 4 <i class="fas fa-arrow-right ml-3 text-primaryLight group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+
+        <!-- Contenedor de Encabezados (h1 a h6) -->
+        <div class="bg-darkCard border border-gray-800 rounded-2xl p-8 md:p-10 shadow-2xl relative overflow-hidden">
+            <!-- Brillo decorativo de fondo -->
+            <div class="absolute top-0 right-0 w-64 h-64 bg-primaryLight opacity-5 blur-[100px] rounded-full pointer-events-none"></div>
+            
+            <div class="flex flex-col space-y-4">
+                <h1 class="text-5xl font-bold text-white">Schalel Perdomo</h1>
+                <h2 class="text-4xl font-semibold text-gray-200">Schalel Perdomo</h2>
+                <h3 class="text-3xl font-medium text-gray-300">Schalel Perdomo</h3>
+                <h4 class="text-2xl text-gray-400">Schalel Perdomo</h4>
+                <h5 class="text-xl text-gray-500">Schalel Perdomo</h5>
+                <h6 class="text-lg text-gray-600">Schalel Perdomo</h6>
+            </div>
+        </div>
+
+        <!-- Línea divisoria original estilizada -->
+        <hr class="border-t border-gray-800 w-full my-12">
+
+        <!-- Contenedor de la Historia -->
+        <div class="bg-darkCard border border-gray-800 rounded-2xl p-8 md:p-10 shadow-2xl relative overflow-hidden">
+            
+            <h2 class="text-3xl font-bold text-white border-l-4 border-primaryLight pl-6 mb-8 tracking-tight">LA LEYENDA DEL ARCOIRIS</h2>
+
+            <div class="space-y-6 text-gray-300 leading-relaxed text-lg">
+                
+                <p>
+                    Cuentan que hace mucho tiempo los colores<br>
+                    empezaron a pelearse. Cada uno<br>
+                    proclamaba que él era el más importante, el más útil, el 
+                    <small class="text-sm font-semibold text-primaryLight uppercase tracking-wider">favorito.</small>
+                </p>
+
+                <p>
+                    El verde dijo: “Sin duda, yo soy el más importante. Soy el<br>
+                    <cite class="italic text-primaryLight font-medium">signo de la vida</cite> y la<br>
+                    esperanza. Me han escogido para la hierba, los árboles, las hojas.”
+                </p>
+
+                <br>
+
+                <!-- Bloque matemático (Original intacto pero encapsulado para diseño) -->
+                <div class="bg-[#121212] border border-gray-800 p-6 rounded-xl font-mono text-center text-xl text-white shadow-inner my-6 tracking-widest inline-block mx-auto w-full md:w-auto">
+                    x<sub>1</sub> + y<sub>2</sub> = 10 <br>
+                    x<sup>2</sup> + y<sup>3</sup> = 25
+                </div>
+
+                <p>
+                    <b class="font-bold text-white">El azul interrumpió:</b> “Tú sólo piensas en la tierra pero<br>
+                    considera el cielo y el mar. El agua es la base de la vida y son las nubes las que la<br>
+                    absorben del mar azul. Yo represento la paz.”
+                </p>
+
+                <p>
+                    El amarillo soltó una risita: “¡Vosotros sois tan serios! Yo<br>
+                    traigo al mundo risas, alegría y calor. El sol es amarillo, la luna es amarilla,<br>
+                    las estrellas son amarillas. Sin mí no habría alegría!”
+                </p>
+
+                <p>
+                    <strong class="font-bold text-white">A continuación</strong> tomó la palabra la naranja: “Yo<br>
+                    soy el color de la salud y de la fuerza. Yo transporto las <u class="underline decoration-primaryLight decoration-2 underline-offset-4 text-white">vitaminas</u> más importantes.<br>
+                    Pensad en las zanahorias, las calabazas, las naranjas, etc.
+                </p>
+
+                <p>
+                    <i class="italic text-gray-400">El rojo no podía contenerse por más tiempo</i> y saltó: “yo<br>
+                    soy el color del valor y del peligro. Estoy dispuesto a luchar por una causa.<br>
+                    Traigo fuego a la sangre. Soy el color de la pasión y del amor”
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

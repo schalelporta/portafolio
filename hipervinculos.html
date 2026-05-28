@@ -1,0 +1,103 @@
+﻿﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hipervínculos</title>
+    
+    <!-- Tailwind CSS (Estilo del Portafolio) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para Íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Configuración idéntica a tus páginas base -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#6b21a8',
+                        primaryLight: '#9333ea',
+                        darkBg: '#121212',
+                        darkCard: '#1e1e1e',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-[#0f0f11] text-gray-200 font-sans antialiased min-h-screen py-12 px-6 overflow-x-hidden flex flex-col items-center justify-center">
+
+    <div class="w-full max-w-3xl space-y-10">
+
+        <!-- Enlaces superiores -->
+        <div class="flex justify-between gap-4 flex-wrap">
+            <a href="index.html" class="inline-flex items-center bg-darkCard border border-gray-800 hover:border-primaryLight text-gray-300 hover:text-white font-medium py-3 px-6 rounded-lg shadow-lg transition-all duration-300 group">
+                <i class="fas fa-arrow-left mr-3 text-primaryLight group-hover:-translate-x-1 transition-transform"></i> Atrás
+            </a>
+            <a href="practica.html" class="inline-flex items-center bg-darkCard border border-gray-800 hover:border-primaryLight text-gray-300 hover:text-white font-medium py-3 px-6 rounded-lg shadow-lg transition-all duration-300 group">
+                Ir a Práctica con hover <i class="fas fa-arrow-right ml-3 text-primaryLight group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+
+        <!-- Título Principal -->
+        <div class="text-center space-y-2">
+            <h1 class="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primaryLight to-purple-400 capitalize">
+                Hipervínculos
+            </h1>
+            <p class="text-gray-400 text-lg">Navega a través de las diferentes páginas</p>
+        </div>
+
+        <!-- Contenedor Principal para los Enlaces -->
+        <div class="bg-darkCard border border-gray-800 rounded-2xl shadow-2xl relative overflow-hidden p-6 md:p-10">
+            <!-- Brillos decorativos -->
+            <div class="absolute top-0 right-0 w-64 h-64 bg-primaryLight opacity-5 blur-[100px] rounded-full pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 bg-primary opacity-5 blur-[100px] rounded-full pointer-events-none"></div>
+            
+            <div class="relative z-10 flex flex-col space-y-5">
+                
+                <!-- Enlace 1 -->
+                <a href="Página 1.html" class="flex items-center justify-between bg-[#121212] border border-gray-800 hover:border-primaryLight p-5 md:p-6 rounded-xl transition-all duration-300 group hover:shadow-[0_0_20px_rgba(147,51,234,0.15)] transform hover:-translate-y-1">
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-800/50 flex items-center justify-center mr-5 group-hover:bg-primary/20 transition-colors">
+                            <i class="fas fa-file-alt text-gray-400 group-hover:text-primaryLight text-xl transition-colors"></i>
+                        </div>
+                        <span class="text-lg md:text-xl font-medium text-gray-300 group-hover:text-white transition-colors">Mostrar primera página</span>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-600 group-hover:text-primaryLight transition-colors"></i>
+                </a>
+
+                <!-- Enlace 2 -->
+                <a href="Página 2 .html" class="flex items-center justify-between bg-[#121212] border border-gray-800 hover:border-primaryLight p-5 md:p-6 rounded-xl transition-all duration-300 group hover:shadow-[0_0_20px_rgba(147,51,234,0.15)] transform hover:-translate-y-1">
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-800/50 flex items-center justify-center mr-5 group-hover:bg-primary/20 transition-colors">
+                            <i class="fas fa-file-alt text-gray-400 group-hover:text-primaryLight text-xl transition-colors"></i>
+                        </div>
+                        <span class="text-lg md:text-xl font-medium text-gray-300 group-hover:text-white transition-colors">Mostrar segunda página</span>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-600 group-hover:text-primaryLight transition-colors"></i>
+                </a>
+
+                <!-- Enlace 3 -->
+                <a href="Página 3.html" class="flex items-center justify-between bg-[#121212] border border-gray-800 hover:border-primaryLight p-5 md:p-6 rounded-xl transition-all duration-300 group hover:shadow-[0_0_20px_rgba(147,51,234,0.15)] transform hover:-translate-y-1">
+                    <div class="flex items-center">
+                        <div class="w-12 h-12 rounded-full bg-gray-800/50 flex items-center justify-center mr-5 group-hover:bg-primary/20 transition-colors">
+                            <i class="fas fa-file-alt text-gray-400 group-hover:text-primaryLight text-xl transition-colors"></i>
+                        </div>
+                        <span class="text-lg md:text-xl font-medium text-gray-300 group-hover:text-white transition-colors">Mostrar tercera página</span>
+                    </div>
+                    <i class="fas fa-chevron-right text-gray-600 group-hover:text-primaryLight transition-colors"></i>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

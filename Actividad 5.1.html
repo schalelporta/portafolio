@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad 5.1 - Horario</title>
+    
+    <!-- Tailwind CSS (Estilo del Portafolio) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para Íconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Configuración idéntica a tus páginas base -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#6b21a8',
+                        primaryLight: '#9333ea',
+                        darkBg: '#121212',
+                        darkCard: '#1e1e1e',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Estilos para el scroll de la tabla */
+        .custom-scrollbar::-webkit-scrollbar {
+            height: 8px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #121212; 
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #6b21a8; 
+            border-radius: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #9333ea; 
+        }
+    </style>
+</head>
+<body class="bg-[#0f0f11] text-gray-200 font-sans antialiased min-h-screen py-12 px-6 overflow-x-hidden">
+    <div class="max-w-[1400px] mx-auto space-y-10">
+
+        <!-- Enlace superior (Botón Atrás) -->
+        <div class="flex justify-start">
+            <a href="index.html" class="inline-flex items-center bg-darkCard border border-gray-800 hover:border-primaryLight text-gray-300 hover:text-white font-medium py-3 px-6 rounded-lg shadow-lg transition-all duration-300 group">
+                <i class="fas fa-arrow-left mr-3 text-primaryLight group-hover:-translate-x-1 transition-transform"></i> Atrás
+            </a>
+        </div>
+
+        <!-- Título Principal -->
+        <div class="text-center space-y-2">
+            <h1 class="text-3xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primaryLight to-purple-400">
+                Horario de Clases - 4° A
+            </h1>
+            <p class="text-xl text-gray-400 tracking-wide">DESARROLLO DE APLICACIONES Y SISTEMAS INFORMÁTICOS</p>
+        </div>
+
+        <!-- Contenedor Principal para la Tabla -->
+        <div class="bg-darkCard border border-gray-800 rounded-2xl shadow-2xl relative overflow-hidden">
+            <!-- Brillos decorativos -->
+            <div class="absolute top-0 right-0 w-64 h-64 bg-primaryLight opacity-5 blur-[100px] rounded-full pointer-events-none"></div>
+            <div class="absolute bottom-0 left-0 w-64 h-64 bg-primary opacity-5 blur-[100px] rounded-full pointer-events-none"></div>
+            
+            <div class="p-6 md:p-8 relative z-10">
+                <div class="overflow-x-auto custom-scrollbar pb-4">
+                    <table class="w-full text-left border-collapse min-w-[1200px]">
+                        <caption class="text-xl font-bold text-white mb-6 text-left border-l-4 border-primaryLight pl-4">
+                            Liceo Técnico Hermana Rosario Torres, Fe y Alegría
+                        </caption>
+                        
+                        <!-- Fondo suave para las columnas -->
+                        <colgroup>
+                            <col style="background-color: rgba(147, 51, 234, 0.08); width: 8%;">
+                            <col style="background-color: rgba(147, 51, 234, 0.03); width: 10%;">
+                            <col style="background-color: rgba(147, 51, 234, 0.03); width: 10%;">
+                            <col style="background-color: rgba(147, 51, 234, 0.03); width: 10%;">
+                            <col style="background-color: rgba(18, 18, 18, 0.8); width: 6%;"> <!-- Recreo -->
+                            <col style="background-color: rgba(147, 51, 234, 0.03); width: 10%;">
+                            <col style="background-color: rgba(147, 51, 234, 0.03); width: 10%;">
+                            <col style="background-color: rgba(18, 18, 18, 0.8); width: 6%;"> <!-- Almuerzo -->
+                            <col style="background-color: rgba(147, 51, 234, 0.03); width: 10%;">
+                            <col style="background-color: rgba(147, 51, 234, 0.03); width: 10%;">
+                            <col style="background-color: rgba(147, 51, 234, 0.03); width: 10%;">
+                        </colgroup>
+
+                        <thead class="bg-[#121212] border-b-2 border-primaryLight/50">
+                            <tr>
+                                <th class="p-3 font-semibold text-primaryLight text-sm text-center border-r border-gray-800">Día</th>
+                                <th class="p-3 font-semibold text-primaryLight text-xs text-center border-r border-gray-800">1ª Hora<br><span class="text-gray-500">(8:00 - 8:50)</span></th>
+                                <th class="p-3 font-semibold text-primaryLight text-xs text-center border-r border-gray-800">2ª Hora<br><span class="text-gray-500">(8:50 - 9:40)</span></th>
+                                <th class="p-3 font-semibold text-primaryLight text-xs text-center border-r border-gray-800">3ª Hora<br><span class="text-gray-500">(9:50 - 10:30)</span></th>
+                                <th class="p-3 font-semibold text-purple-400 text-xs text-center border-r border-gray-800">Receso<br><span class="text-gray-500">(10:30 - 10:50)</span></th>
+                                <th class="p-3 font-semibold text-primaryLight text-xs text-center border-r border-gray-800">4ª Hora<br><span class="text-gray-500">(10:50 - 11:40)</span></th>
+                                <th class="p-3 font-semibold text-primaryLight text-xs text-center border-r border-gray-800">5ª Hora<br><span class="text-gray-500">(11:40 - 12:30)</span></th>
+                                <th class="p-3 font-semibold text-purple-400 text-xs text-center border-r border-gray-800">Almuerzo<br><span class="text-gray-500">(12:30 - 13:30)</span></th>
+                                <th class="p-3 font-semibold text-primaryLight text-xs text-center border-r border-gray-800">6ª Hora<br><span class="text-gray-500">(13:30 - 14:20)</span></th>
+                                <th class="p-3 font-semibold text-primaryLight text-xs text-center border-r border-gray-800">7ª Hora<br><span class="text-gray-500">(14:20 - 15:10)</span></th>
+                                <th class="p-3 font-semibold text-primaryLight text-xs text-center">8ª Hora<br><span class="text-gray-500">(15:10 - 16:00)</span></th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="divide-y divide-gray-800">
+                            <!-- Lunes -->
+                            <tr class="hover:bg-gray-800/40 transition-colors group">
+                                <td class="p-3 text-center font-bold text-white border-r border-gray-800">Lunes</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">DISEÑO Y DESARROLLO DE BASE DE DATOS</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">ANÁLISIS DE SISTEMAS INFORMATICOS</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">ANÁLISIS DE SISTEMAS INFORMATICOS</td>
+                                <td rowspan="5" class="p-3 text-center font-bold text-primaryLight tracking-[0.2em] uppercase border-r border-gray-800 shadow-inner align-middle" style="writing-mode: vertical-rl; transform: rotate(180deg);">RECREO</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">LAB.NAT</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">EDUCACIÓN ARTISTICA</td>
+                                <td rowspan="5" class="p-3 text-center font-bold text-primaryLight tracking-[0.2em] uppercase border-r border-gray-800 shadow-inner align-middle" style="writing-mode: vertical-rl; transform: rotate(180deg);">ALMUERZO</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">EDUCACIÓN FISICA</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">LENGUA ESPAÑOLA</td>
+                                <td class="p-3 text-xs text-gray-300 text-center">LENGUA ESPAÑOLA</td>
+                            </tr>
+                            <!-- Martes -->
+                            <tr class="hover:bg-gray-800/40 transition-colors group">
+                                <td class="p-3 text-center font-bold text-white border-r border-gray-800">Martes</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">CIENCIAS DE LA NATURALEZA</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">CIENCIAS DE LA NATURALEZA</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">MATEMÁTICAS</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">LENGUAS EXTRANJERAS (INGLÉS)</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">DISEÑO Y DESARROLLO DE BASE DE DATOS</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">DISEÑO Y DESARROLLO DE BASE DE DATOS</td>
+                                <td class="p-3 text-xs text-gray-300 text-center">DISEÑO Y DESARROLLO DE BASE DE DATOS</td>
+                            </tr>
+                            <!-- Miércoles -->
+                            <tr class="hover:bg-gray-800/40 transition-colors group">
+                                <td class="p-3 text-center font-bold text-white border-r border-gray-800">Miércoles</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">DISEÑO DE PORTALES WEB Y RECURSOS MULTIMEDIA</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">DISEÑO DE PORTALES WEB Y RECURSOS MULTIMEDIA</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">DISEÑO DE PORTALES WEB Y RECURSOS MULTIMEDIA</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">DISEÑO Y DESARROLLO DE BASE DE DATOS</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">TÉCNOLOGIA DIGITAL</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">CIENCIAS SOCIALES</td>
+                                <td class="p-3 text-xs text-gray-300 text-center">CIENCIAS SOCIALES</td>
+                            </tr>
+                            <!-- Jueves -->
+                            <tr class="hover:bg-gray-800/40 transition-colors group">
+                                <td class="p-3 text-center font-bold text-white border-r border-gray-800">Jueves</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">LENGUAS EXTRANJERAS (INGLÉS)</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">LENGUAS EXTRANJERAS (INGLÉS)</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">LENGUA ESPAÑOLA</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">ANÁLISIS DE SISTEMAS INFORMATICOS</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">TÉCNOLOGIA DIGITAL</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">TÉCNOLOGIA DIGITAL</td>
+                                <td class="p-3 text-xs text-gray-300 text-center">FORMACIÓN HUMANA Y RELIGIOSA</td>
+                            </tr>
+                            <!-- Viernes -->
+                            <tr class="hover:bg-gray-800/40 transition-colors group">
+                                <td class="p-3 text-center font-bold text-white border-r border-gray-800 rounded-bl-xl">Viernes</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">DISEÑO DE PORTALES WEB Y RECURSOS MULTIMEDIA</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">DISEÑO DE PORTALES WEB Y RECURSOS MULTIMEDIA</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">DISEÑO DE PORTALES WEB Y RECURSOS MULTIMEDIA</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">ANÁLISIS DE SISTEMAS INFORMATICOS</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">CIENCIAS SOCIALES</td>
+                                <td class="p-3 text-xs text-gray-300 text-center border-r border-gray-800">MATEMÁTICAS</td>
+                                <td class="p-3 text-xs text-gray-300 text-center rounded-br-xl">MATEMÁTICAS</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
